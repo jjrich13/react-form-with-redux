@@ -26,12 +26,10 @@ class Form extends Component {
   
   render() {
 
-
     return (
       <div>
         <input type="text" placeholder="person" onChange={this.handleChange('person')}/>
         <input type="text" placeholder="snack" onChange={this.handleChange('snack')}/>
-
         <button onClick={()=> this.props.dispatch({type: 'SUBMIT', payload: this.state.newSnack})}>Submit</button>
       </div>
     );
